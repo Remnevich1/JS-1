@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Домашнее задание. Урок 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Домашнее задание по курсу Javascript 1</h1>
-    <script>
-        var admin;
-        var name;
-        name = "Василий";
-        admin = name;
-        alert('Привет ' + admin);
-
-        const tc = prompt('Введите температу по Цельсию', '');
-        const tf = tc * 1.8 +32;
-
-        alert('Температура по Фаренгейту ' + tf) 
-    </script>
+    <div class="flex">
+        <div id="catalog" class="mainBlock"></div>
+        <div class="cart-wrapper">
+            <div class="cart">
+                <div class="cart-items"></div>
+                <hr/>
+                <div class="cart-result"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
